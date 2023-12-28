@@ -35,6 +35,11 @@ When non-nil, tree-buffer headings are fontified to match base-buffer. When nil,
 
 When non-nil, enable foldable headings in tree-buffers.
 
+- =org-side-tree-no-delete-other-windows=
+
+When non-nil tree-window will have ‘no-delete-other-windows’ parameter.
+Prevents the side-tree window from closing when calling ‘delete-other-windows’/"C-x 1".
+
 Note: This package simply turns on =outline-minor-mode=, it does not enable or alter any outline-related settings or keybindings. So, to use =TAB= for outline-visibility cycling, add the following to your config: =(setq outline-minor-mode-cycle t)=.
 
 
